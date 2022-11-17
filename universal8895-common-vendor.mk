@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,9 +34,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000017.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000017.tlbin \
     vendor/samsung/universal8895-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000001a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000001a.tlbin \
     vendor/samsung/universal8895-common/proprietary/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
-	vendor/samsung/universal8895-common/proprietary/bin/faced:system/bin/faced \
-	vendor/samsung/universal8895-common/proprietary/bin/irisd:system/bin/irisd \
+    vendor/samsung/universal8895-common/proprietary/bin/faced:system/bin/faced \
+    vendor/samsung/universal8895-common/proprietary/bin/irisd:system/bin/irisd \
     vendor/samsung/universal8895-common/proprietary/bin/lpm:system/bin/lpm \
+    vendor/samsung/universal8895-common/proprietary/bin/ss_conn_daemon:system/bin/ss_conn_daemon \
+    vendor/samsung/universal8895-common/proprietary/bin/tlc_server:system/bin/tlc_server \
     vendor/samsung/universal8895-common/proprietary/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/samsung/universal8895-common/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/samsung/universal8895-common/proprietary/etc/gps_debug.conf:system/etc/gps_debug.conf \
@@ -62,9 +64,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/lib/android.hardware.bluetooth.a2dp@1.0.so:system/lib/android.hardware.bluetooth.a2dp@1.0.so \
     vendor/samsung/universal8895-common/proprietary/lib/android.hardware.gnss@1.0.so:system/lib/android.hardware.gnss@1.0.so \
     vendor/samsung/universal8895-common/proprietary/lib/android.hardware.gnss@1.1.so:system/lib/android.hardware.gnss@1.1.so \
+    vendor/samsung/universal8895-common/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
     vendor/samsung/universal8895-common/proprietary/lib/hw/audio.playback_record.default.so:system/lib/hw/audio.playback_record.default.so \
     vendor/samsung/universal8895-common/proprietary/lib/hw/audio.primary.universal8895.so:system/lib/hw/audio.primary.universal8895.so \
-    vendor/samsung/universal8895-common/proprietary/lib/hw/audio.tms.default.so:system/lib/hw/audio.tms.default.so \
     vendor/samsung/universal8895-common/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
     vendor/samsung/universal8895-common/proprietary/lib/libExynosOMX_Core.so:system/lib/libExynosOMX_Core.so \
     vendor/samsung/universal8895-common/proprietary/lib/libExynosOMX_Resourcemanager.so:system/lib/libExynosOMX_Resourcemanager.so \
@@ -111,6 +113,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/lib64/android.hardware.gnss@1.1.so:system/lib64/android.hardware.gnss@1.1.so \
     vendor/samsung/universal8895-common/proprietary/lib64/android.hardware.nfc@1.0.so:system/lib64/android.hardware.nfc@1.0.so \
     vendor/samsung/universal8895-common/proprietary/lib64/android.hardware.nfc@1.1.so:system/lib64/android.hardware.nfc@1.1.so \
+    vendor/samsung/universal8895-common/proprietary/lib64/hw/audio.a2dp.default.so:system/lib64/hw/audio.a2dp.default.so \
     vendor/samsung/universal8895-common/proprietary/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
     vendor/samsung/universal8895-common/proprietary/lib64/libExynosOMX_Core.so:system/lib64/libExynosOMX_Core.so \
     vendor/samsung/universal8895-common/proprietary/lib64/libExynosOMX_Resourcemanager.so:system/lib64/libExynosOMX_Resourcemanager.so \
@@ -176,7 +179,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000014.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000014.tlbin \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000016.tlbin \
-	vendor/samsung/universal8895-common/proprietary/vendor/bin/argosd:$(TARGET_COPY_OUT_VENDOR)/bin/argosd \
+    vendor/samsung/universal8895-common/proprietary/vendor/bin/argosd:$(TARGET_COPY_OUT_VENDOR)/bin/argosd \
     vendor/samsung/universal8895-common/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
     vendor/samsung/universal8895-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service \
     vendor/samsung/universal8895-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
@@ -346,10 +349,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/vendor/lib64/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.sensorhub.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib64/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudioeffectoffload.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so
-
-PRODUCT_PACKAGES += \
-    HotwordEnrollmentOKGoogleExCORTEXM4 \
-    HotwordEnrollmentXGoogleExCORTEXM4
 
 # Create Mali links for Vulkan and OpenCL
 PRODUCT_PACKAGES += libGLES_mali

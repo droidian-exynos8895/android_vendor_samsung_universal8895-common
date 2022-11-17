@@ -98,7 +98,7 @@
 
 	<ctl name="HPOUT3 Digital Switch" value="1" />
 	<ctl name="HPOUT3L Input 1" value="None" />
-	<ctl name="HPOUT3R Input 1" value="None" />
+	<ctl name="HPOUT3L Input 2" value="None" />
 	<ctl name="OUT3 Demux" value="HPOUT3" />
 
 	<ctl name="DMIC1 Switch" value="0" />
@@ -231,7 +231,13 @@
 	<!-- output device -->
 	<path name="dev-handset">
 		<ctl name="HPOUT3L Input 1" value="AIF1RX1" />
-		<ctl name="HPOUT3R Input 1" value="AIF1RX2" />
+		<ctl name="HPOUT3L Input 2" value="AIF1RX2" />
+		<ctl name="OUT3 Demux" value="HPOUT4" />
+	</path>
+
+	<path name="dev-handset-left-ch">
+		<ctl name="HPOUT3L Input 1" value="AIF1RX1" />
+		<ctl name="HPOUT3L Input 2" value="None" />
 		<ctl name="OUT3 Demux" value="HPOUT4" />
 	</path>
 
@@ -304,8 +310,13 @@
 		<path name="dev-handset" />
 	</path>
 
+	<path name="media-handset-left-ch">
+		<path name="route-playback" />
+		<path name="dev-handset-left-ch" />
+	</path>
+
 	<path name="factory-media-handset">
-		<path name="media-handset" />
+		<path name="media-handset-left-ch" />
 	</path>
 
 	<path name="media-speaker">
@@ -370,7 +381,7 @@
 
 	<!-- Ringtone playback -->
 	<path name="ringtone-handset">
-		<path name="media-handset" />
+		<path name="media-handset-left-ch" />
 	</path>
 
 	<path name="ringtone-speaker">
@@ -395,7 +406,7 @@
 
 	<!-- Communication playback -->
 	<path name="communication-handset">
-		<path name="media-handset" />
+		<path name="media-handset-left-ch" />
 	</path>
 
 	<path name="communication-speaker">
@@ -548,7 +559,7 @@
 	<!-- NB -->
 	<path name="incall_nb-handset">
 		<path name="route-playback" />
-		<path name="dev-handset" />
+		<path name="dev-handset-left-ch" />
 	</path>
 
 	<path name="incall_nb-speaker">
@@ -770,7 +781,7 @@
 
 	<!-- Realtime Loopback -->
 	<path name="realtimeloopback-handset">
-		<path name="media-handset" />
+		<path name="media-handset-left-ch" />
 	</path>
 
 	<path name="realtimeloopback-speaker">
@@ -800,7 +811,7 @@
 
 	<!-- AP TTY Mode -->
 	<path name="ap_tty_mode-handset">
-		<path name="media-handset" />
+		<path name="media-handset-left-ch" />
 	</path>
 
 	<path name="ap_tty_mode-headset">
@@ -813,7 +824,7 @@
 
 	<!-- echo(rms) test output -->	
 	<path name="echo_test-handset">
-		<path name="media-handset" />
+		<path name="media-handset-left-ch" />
 	</path>
 
 	<path name="echo_test-speaker">

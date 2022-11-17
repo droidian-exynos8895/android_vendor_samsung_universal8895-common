@@ -97,7 +97,10 @@
       mcc="202"
       mnc="05"
       apn="internet.vodafone.gr"
-      type="default,supl"
+      user="user"
+      password="pass"
+      authtype="1"
+      type="default,supl,xcap"
   />
 
   <apn carrier="Vodafone MMS"
@@ -111,6 +114,13 @@
       mmsport="5080"
       authtype="1"
       type="mms"
+  />
+
+  <apn carrier="Vodafone IMS"
+      mcc="202"
+      mnc="05"
+      apn="ims"
+      type="ims"
   />
 
   <apn carrier="Q Internet"
@@ -5664,6 +5674,19 @@
       mvno_match_data="0305"
   />
 
+  <apn carrier="IMS"
+      mcc="234"
+      mnc="20"
+      apn="ims"
+      authtype="0"
+      protocol="IPV4V6"
+      mtu="1440"
+      type="ims"
+      mvno_type="gid"
+      mvno_match_data="0305"
+      user_editable="0"
+  />
+
   <apn carrier="Lycamobile"
       mcc="234"
       mnc="26"
@@ -7108,6 +7131,7 @@
       mnc="08"
       apn="IMS"
       protocol="IPV6"
+      roaming_protocol="IPV6"
       authtype="0"
       type="ims"
   />
@@ -7542,7 +7566,8 @@
       mcc="244"
       mnc="05"
       apn="ims"
-      protocol="IPV4V6"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
       type="ims"
   />
 
@@ -7550,7 +7575,8 @@
       mcc="244"
       mnc="05"
       apn="xcap"
-      protocol="IPV4V6"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
       type="xcap"
   />
 
@@ -25358,6 +25384,7 @@
       type="ims"
       protocol="IP"
       user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Movistar INTERNET"
@@ -25392,6 +25419,7 @@
       type="ims"
       protocol="IP"
       user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Internet"
@@ -25443,7 +25471,8 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      user_editable="0"
+      roaming_protocol="IPV4V6"
+      user_visible="0"
   />
 
   <apn carrier="Internet"
@@ -25495,7 +25524,8 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      user_editable="0"
+      roaming_protocol="IPV4V6"
+      user_visible="0"
   />
 
   <apn carrier="Location"
@@ -25551,6 +25581,126 @@
 	  roaming_protocol="IPV4V6"
   />
 
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341300"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341301"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341302"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341303"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341304"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341305"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341306"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341307"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341308"
+  />
+
+  <apn carrier="IMS"
+      mcc="334"
+      mnc="130"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      mvno_type="imsi"
+      mvno_match_data="3341309"
+  />
+
   <apn carrier="Internet"
       mcc="334"
       mnc="140"
@@ -25566,6 +25716,16 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+  />
+
+  <apn carrier="SOS APN"
+      mcc="334"
+      mnc="140"
+      apn="sos"
+      type="Emergency"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_visible="0"
   />
 
   <apn carrier="Digicel LTE"
@@ -26893,6 +27053,14 @@
       type="default,supl"
   />
 
+  <apn carrier="IMS"
+      mcc="370"
+      mnc="01"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+  />
+
   <apn carrier="Orange MMS"
       mcc="370"
       mnc="01"
@@ -26910,8 +27078,30 @@
       mcc="370"
       mnc="02"
       apn="internet.ideasclaro.com.do"
-      type="default,supl"
+      type="default,supl,xcap"
       protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+  
+  <apn carrier="IMS"
+      mcc="370"
+      mnc="02"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+  />
+  
+  <apn carrier="SOS APN"
+      mcc="370"
+      mnc="02"
+      apn="sos"
+      type="Emergency"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="MMS CLARO"
@@ -44466,6 +44656,16 @@
       type="mms"
   />
 
+  <apn carrier="Claro_GT IMS"
+      mcc="704"
+      mnc="01"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+  />
+
   <apn carrier="BROADBAND TIGO GT"
       mcc="704"
       mnc="02"
@@ -44580,6 +44780,16 @@
       mmsport="8080"
       mmsc="http://mms.ideasclaro.com:8002"
       type="mms"
+  />
+
+  <apn carrier="Claro_SV IMS"
+      mcc="706"
+      mnc="01"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="Digicel Web"
@@ -44736,6 +44946,16 @@
       type="mms"
   />
 
+  <apn carrier="Claro_HN IMS"
+      mcc="708"
+      mnc="001"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+  />
+
   <apn carrier="INTERNET TIGO"
       mcc="708"
       mnc="02"
@@ -44840,6 +45060,16 @@
       mmsc="http://10.6.32.27/servlets/mms"
       authtype="1"
       type="mms"
+  />
+
+  <apn carrier="Claro_NI IMS"
+      mcc="710"
+      mnc="21"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="Movistar INTERNET"
@@ -45002,6 +45232,16 @@
       type="mms"
   />
 
+  <apn carrier="Claro_CR IMS"
+      mcc="712"
+      mnc="03"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+  />
+
   <apn carrier="INTERNET CLARO"
       mcc="712"
       mnc="030"
@@ -45152,14 +45392,6 @@
       type="mms"
       protocol="IPV4V6"
   />
-  
-  <apn carrier="IMS"
-      mcc="714"
-      mnc="020"
-      apn="ims"
-      type="ims"
-      protocol="IPV4V6"
-  />
 
   <apn carrier="WEB Claro"
       mcc="714"
@@ -45182,6 +45414,16 @@
       mmsc="http://www.claro.com.pa/mms/"
       authtype="1"
       type="mms"
+  />
+
+  <apn carrier="Claro_PA IMS"
+      mcc="714"
+      mnc="03"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="Digicel Web"
@@ -45237,7 +45479,7 @@
       user="movistar@datos"
       password="movistar"
       authtype="1"
-      type="default,supl"
+      type="default,supl,xcap"
       protocol="IPV4V6"
   />
 
@@ -45262,6 +45504,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      user_visible="0"
   />
 
   <apn carrier="CLARO DATOS"
@@ -45294,7 +45537,9 @@
       mnc="10"
       apn="ims"
       type="ims"
-      protocol="IPV4V6"
+      protocol="IP"
+      roaming_protocol="IP"
+      user_editable="0"
   />
 
   <apn carrier="Bitel Internet"
@@ -45375,60 +45620,57 @@
       apn="ims"
       protocol="IPV4V6"
       type="ims"
+      user_editable="0"
   />
 
-  <apn carrier="Quam_WEB"
+  <apn carrier="Servicio_WEB"
       mcc="722"
       mnc="01"
       apn="internet.movil"
       user="internet"
       password="internet"
       authtype="1"
-      type="default"
-      mvno_type="spn"
-      mvno_match_data="QUAM"
+      type="default,supl"
+	  protocol="IPV4V6"
   />
 
-  <apn carrier="Quam_MMS"
+  <apn carrier="Servicio_MMS"
       mcc="722"
       mnc="01"
       apn="mms.movil"
       user="mms"
       password="mms"
-      mmsc="http://mms.quam.com.ar"
+      mmsc="https://mms.tuenti.com.ar"
       mmsproxy="200.68.32.239"
-      mmsport="9090"
+      mmsport="8080"
       authtype="1"
       type="mms"
-      mvno_type="spn"
-      mvno_match_data="QUAM"
+      protocol="IPV4V6"
   />
 
-  <apn carrier="Quam_WEB"
+  <apn carrier="Servicio_WEB"
       mcc="722"
-      mnc="01"
+      mnc="010"
       apn="internet.movil"
       user="internet"
       password="internet"
       authtype="1"
-      type="default"
-      mvno_type="spn"
-      mvno_match_data="CELULAR"
+      type="default,supl"
+	  protocol="IPV4V6"
   />
 
-  <apn carrier="Quam_MMS"
+  <apn carrier="Servicio_MMS"
       mcc="722"
-      mnc="01"
+      mnc="010"
       apn="mms.movil"
       user="mms"
       password="mms"
-      mmsc="http://mms.quam.com.ar"
+      mmsc="https://mms.tuenti.com.ar"
       mmsproxy="200.68.32.239"
-      mmsport="9090"
+      mmsport="8080"
       authtype="1"
       type="mms"
-      mvno_type="spn"
-      mvno_match_data="CELULAR"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Movistar WAP"
@@ -45462,6 +45704,8 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Movistar WAP"
@@ -45495,6 +45739,8 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Claro AR"
@@ -45511,6 +45757,8 @@
       apn="ims"
       type="ims"
       protocol="IPV6"
+      roaming_protocol="IPV6"
+      user_editable="0"
   />
 
   <apn carrier="Claro AR"
@@ -45527,6 +45775,8 @@
       apn="ims"
       type="ims"
       protocol="IPV6"
+      roaming_protocol="IPV6"
+      user_editable="0"
   />
 
   <apn carrier="Personal Datos"
@@ -45558,6 +45808,7 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="Personal Datos"
@@ -45589,6 +45840,7 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="Argentina:Nuestro:MMS"
@@ -45773,6 +46025,8 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_visible="0"
   />
 
   <apn carrier="Claro XCAP"
@@ -45781,6 +46035,7 @@
       apn="xcap"
       type="xcap"	
       protocol="IPV4V6"
+      user_visible="0"
   />
 
   <apn carrier="Vivo MMS"
@@ -45814,6 +46069,7 @@
       apn="xcap.ims"
       protocol="IPV4V6"
       type="xcap"
+      user_editable="0"
   />
   
   <apn carrier="Vivo IMS"
@@ -45823,6 +46079,7 @@
       authtype="1"
       protocol="IPV4V6"
       type="ims"
+      user_editable="0"
   />
 
   <apn carrier="SCTL MMS"
@@ -45877,6 +46134,7 @@
       apn="xcap.ims"
       protocol="IPV4V6"
       type="xcap"
+      user_editable="0"
   />
 
   <apn carrier="Vivo IMS"
@@ -45886,6 +46144,7 @@
       authtype="1"
       protocol="IPV4V6"
       type="ims"
+      user_editable="0"
   />
 
   <apn carrier="Vivo MMS"
@@ -45919,6 +46178,7 @@
       apn="xcap.ims"
       protocol="IPV4V6"
       type="xcap"
+      user_editable="0"
   />
 
   <apn carrier="Vivo IMS"
@@ -45928,6 +46188,7 @@
       authtype="1"
       protocol="IPV4V6"
       type="ims"
+      user_editable="0"
   />
 
   <apn carrier="Sercomtel:Dados"
@@ -46047,6 +46308,7 @@
       apn="xcap.ims"
       protocol="IPV4V6"
       type="xcap"
+      user_editable="0"
   />
 
   <apn carrier="Vivo IMS"
@@ -46056,6 +46318,7 @@
       authtype="1"
       protocol="IPV4V6"
       type="ims"
+      user_editable="0"
   />
 
   <apn carrier="OI:INTERNET:2"
@@ -46244,6 +46507,8 @@
       password="entelpcs"
       authtype="1"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="IMS"
@@ -46253,6 +46518,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="XCAP"
@@ -46260,7 +46526,9 @@
       mnc="01"
       apn="hos"
       type="xcap"
-      protocol="IP"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="Internet Móvil Falabella"
@@ -46416,6 +46684,8 @@
       apn="internet"
       authtype="0"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="MMS WOM"
@@ -46435,6 +46705,9 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Internet Movil"
@@ -46445,6 +46718,8 @@
       password="entelpcs"
       authtype="1"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="IMS"
@@ -46454,6 +46729,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="XCAP"
@@ -46461,7 +46737,9 @@
       mnc="10"
       apn="hos"
       type="xcap"
-      protocol="IP"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="Internet Móvil Falabella"
@@ -46494,7 +46772,8 @@
       user="wap"
       password="wap"
       type="default,supl,xcap"
-      protocol="IPV4V6"
+      protocol="IP"
+      roaming_protocol="IP"
   />
 
   <apn carrier="Movistar IMS"
@@ -46503,6 +46782,8 @@
       apn="ims"
       type="ims"
       protocol="IP"
+      roaming_protocol="IP"
+      user_editable="0"
   />
 
   <apn carrier="Movistar MMS"
@@ -46534,7 +46815,10 @@
       user="clarochile"
       password="clarochile"
       authtype="1"
-      type="default,supl"
+      type="default,supl,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
   <apn carrier="MMS Claro"
@@ -46555,16 +46839,32 @@
       mnc="03"
       apn="ims"
       type="ims"
-      protocol="IP"
+      protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      user_visible="0"
   />
-  
-  <apn carrier="XCAP Claro"
+
+  <apn carrier="BAM Claro"
       mcc="730"
-      mnc="03"
+      mnc="23"
       apn="bam.clarochile.cl"
-      type="xcap"
-      protocol="IP"
+      user="clarochile"
+      password="clarochile"
+      authtype="1"
+      type="default,supl,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+  />
+
+  <apn carrier="IMS Claro"
+      mcc="730"
+      mnc="23"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_visible="0"
   />
 
   <apn carrier="web"
@@ -46628,6 +46928,19 @@
       apn="internet"
       authtype="0"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
+  <apn carrier="IMS"
+      mcc="730"
+      mnc="21"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Movistar INTERNET"
@@ -46751,8 +47064,8 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      user_editable="1"
-      user_visible="1"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Internet ETB"
@@ -46836,8 +47149,8 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      user_editable="1"
-      user_visible="1"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Internet ETB"
@@ -46914,6 +47227,16 @@
       type="ims"
       protocol="IPV4V6"
       user_editable="0"
+      user_visible="0"
+  />
+
+  <apn carrier="Movistar XCAP"
+      mcc="732"
+      mnc="123"
+      apn="hos"
+      type="xcap"
+      protocol="IPV4V6"
+      user_visible="0"
   />
 
   <apn carrier="Multimedia"
@@ -47190,6 +47513,15 @@
       type="mms"
   />
 
+  <apn carrier="IMSTIGO"
+      mcc="736"
+      mnc="03"
+      apn="ims"
+      type="ims"
+      protocol="IPV4"
+      user_editable="0"
+  />
+
   <apn carrier="Digicel Web"
       mcc="738"
       mnc="01"
@@ -47331,6 +47663,7 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      user_editable="0"
       user_visible="0"
   />
 
@@ -47352,6 +47685,17 @@
       mmsc="http://iesmms.porta.com.ec"
       authtype="1"
       type="mms"
+  />
+
+  <apn carrier="IMS"
+      mcc="740"
+      mnc="01"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Internet Claro"
@@ -47647,6 +47991,8 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      user_editable="0"
+      user_visible="0"
   />
 
   <apn carrier="Claro UY"
@@ -47677,6 +48023,8 @@
       apn="ims"
       type="ims"
       protocol="IPV6"
+      roaming_protocol="IPV6"
+      user_editable="0"
   />
 
   <apn carrier="Orange net KE"
