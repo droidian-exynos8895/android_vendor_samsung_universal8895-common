@@ -34,11 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000017.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000017.tlbin \
     vendor/samsung/universal8895-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000001a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000001a.tlbin \
     vendor/samsung/universal8895-common/proprietary/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
-    vendor/samsung/universal8895-common/proprietary/bin/faced:system/bin/faced \
-    vendor/samsung/universal8895-common/proprietary/bin/irisd:system/bin/irisd \
     vendor/samsung/universal8895-common/proprietary/bin/lpm:system/bin/lpm \
-    vendor/samsung/universal8895-common/proprietary/bin/ss_conn_daemon:system/bin/ss_conn_daemon \
-    vendor/samsung/universal8895-common/proprietary/bin/tlc_server:system/bin/tlc_server \
     vendor/samsung/universal8895-common/proprietary/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/samsung/universal8895-common/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/samsung/universal8895-common/proprietary/etc/gps_debug.conf:system/etc/gps_debug.conf \
@@ -179,7 +175,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000014.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000014.tlbin \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000016.tlbin \
-    vendor/samsung/universal8895-common/proprietary/vendor/bin/argosd:$(TARGET_COPY_OUT_VENDOR)/bin/argosd \
     vendor/samsung/universal8895-common/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
     vendor/samsung/universal8895-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service \
     vendor/samsung/universal8895-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
